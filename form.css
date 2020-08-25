@@ -1,0 +1,37 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Sans-serif;
+	
+}
+
+body {
+	
+	background-color: #EDEDED;
+	font-family: Sans-serif;
+	
+}
+
+form {
+	width: 700px;
+	margin: auto;
+	background-color: #FFFFFF
+}
+
+input {
+	margin: 12px;
+	padding: 8px;
+	width: 660px;
+	
+}
+
+.enviar {
+	width: 100px;
+	height: 50; 
+	padding: 8px;
+	margin: 10px;
+	align-content: center;
+		
+}
+@media (max-width: 1041px){
+}

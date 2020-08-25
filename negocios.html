@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ventas Totalplay</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet" >
+	<link rel="shortcut icon" href="images/icons/totalverde.png">
+	
+	</head>
+	
+	<body>
+	
+	
+	 <!-- Menú inicio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html" ><img alt="Totalplay" src="images/icons/totalverde.png" height="32px" width="26px">Totalplay<sub><strong><span style="color:#008e7c ">Negocios</span></strong></sub></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> 
+			  
+			  <a class="nav-link" href="contrata_residencial.html">Residencial</a> 
+			
+		 </li>
+			
+          <li class="nav-item"> 
+			  
+			  <a class="nav-link" href="negocios.html">Negocios</a>
+		
+		</li>
+			
+			 
+		<li class="nav-item"> 
+			
+			<a class="nav-link" href="#">Promociones</a>
+		
+		</li>
+		  
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">!Contrata!</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+                <a class="dropdown-item" href="contrata_residencial.html">Residencial</a>
+                <a class="dropdown-item" href="negocios.html">Negocios</a>
+		     
+            </div>
+          </li>
+        </ul>
+       
+      </div>
+    </nav>
+	  <!-- Menú fin -->
+	
+	 <!-- Container_1 inicio -->
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+			  
+	<fieldset>
+			  <form name="contacto" id="contacto" method="post" action="mail_pachuca.php" style="align-content: center">
+	<p>
+		<select name="paquete" id="paquete">
+			<option>Selecciona paquete...</option>
+			<option>Tripleplay</option>
+			<option>Dobleplay</option>
+		</select>
+	</p>
+	<p>Negocios:
+	<select name="neg" id="neg">
+		<option>-</option>
+		<option>15 Mb Paquete Micro</option>
+		<option>30 Mb Paquete Micro 30</option>
+		<option>60 Mb Paquete Din&aacute;mico</option>
+		<option>80 Mb Paquete Innovador</option>
+		<option>100 Mb Paquete Emprendedor</option>
+		<option>200 Mb Paquete Ejecutivo</option>
+		<option>300 Mb paquete Profesional</option>
+	 </select>
+	</p>
+  	<!-- -->
+	<p>¿Con TV extra? <select name="tv" id="tv">
+        <option>Si</option>
+        <option>No</option>
+	  </select>
+	</p>
+	<p>Selecciona el número de TV's
+	 <select name="notv" id="notv">
+		 <option>-</option>
+		 <option>1</option>
+		 <option>2</option>
+		 <option>3</option>
+		 <option>4</option>
+		 <option>5</option>
+		 <option>Sin TV</option>
+	 </select>
+	</p>
+	<p>¿Con tel&eacute;fono? <select name="telcontac" id="telcontac">
+        <option>Si</option>
+        <option>No</option>
+	  </select>
+	</p>
+	<p>¿Con paquete adicional? <select name="pack" id="pack">
+        <option>-</option>
+        <option>HBO Max</option>
+        <option>Fox Premium</option>
+	  </select>
+	</p>
+	<p>Nombre:
+	<input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required="">
+	</p>
+	<p>
+	Direcci&oacute;n:
+	<input type="text" name="direccion" id="direccion" placeholder="Calle, Número, Colonia" required="">
+	</p>
+	<p>Estado:
+	<select name="estado" id="estado" required="">
+		<option>Selecciona...</option>
+		<option>Aguascalientes</option>
+		<option>Baja California</option>
+		<option>Chihuahua</option>
+		<option>Estado de México</option>
+		<option>Guanajuato</option>
+		<option>Hidalgo</option>
+		<option>Jalisco</option>
+		<option>Michoacán de Ocampo</option>
+		<option>Morelos</option>
+		<option>Nuevo León</option>
+		<option>Puebla</option>
+		<option>Querétaro</option>
+		<option>Quintana Roo</option>
+		<option>San Luis Potosí</option>
+		<option>Veracruz de Ignacio de la Llave</option>
+		<option>Yucatán</option>
+		
+	</select>
+	</p>
+	<p>e-mail: 
+	<input type="text" name="email" id="email" required="">
+	</p>
+	<p>Tel&eacute;fono:
+	<input type="text" name="tel" id="tel" required="">
+	</p>
+	<input type="submit" name="enviar" id="enviar" class="enviar">
+	<div id="procesa"></div>
+	
+</form>
+	</fieldset>
+
+			    
+            
+            <div class="row justify-content-center">
+              <div class="col-auto">
+              </div>
+              </div>
+          
+           
+          </div>
+        </div>
+      </div>
+    </div>
+	  <!-- Container_1 fin -->
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap-4.2.1.js"></script> -->
+
+	<script>
+	$(document).ready(function(){
+             $('#contacto').submit(function () {
+            $.post('mail_pachuca.php', $('#contacto').serialize(), function (data, textStatus) {
+            $('#procesa').append(data);
+                $("#res").val('');
+                $("#neg").val('');
+                $("#tv").val('');
+                $("#notv").val('');
+				$("#telcontac").val('');
+				$("#nombre").val('');
+				$("#direccion").val('');
+				$("#estado").val('');
+				$("#email").val('');
+				$("#tel").val('');
+				
+                });
+            return false;
+            });
+		});
+	</script>
+	
+	
+	 <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2">
+          <h2>Cont&aacute;ctanos</h2>
+          <address>
+            <strong>Totalplay</strong><br>
+            
+            <abbr title="Phone"></abbr> <a href="tel:01 55 7520 7680" data-content="015575207680" data-type="phone" >01 55 7520 7680</a>
+          </address>
+          <h4>Social</h4>
+          <div class="row">
+			  <div class="col-2"><a href="https://www.facebook.com/Ventas-Totalplay-103464141002923/"><img class="rounded-circle" src="images/icons/facebook.png" alt="facebook" ></a></div>
+			  
+            <div class="col-2"><a href="https://wa.me/5215575207680
+				"><img class="rounded-circle" src="images/icons/whatsapp.png" alt="whatsapp" width="32px" height="32px"></a></div>
+			  
+            
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright &copy; Totalplay. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.2.1.js"></script>
+	</body>
+</html>
+ 
